@@ -1,0 +1,314 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;400;700&display=swap');
+
+* {
+  margin: 0;
+  padding: 0;
+  font-family: 'Poppins';
+}
+
+body {
+  background-color: #f5f2f0;
+}
+
+.container {
+  max-width: 1920px;
+  margin: auto;
+  position: relative;
+  height: 100vh;
+}
+
+/* Left Banner Section */
+
+.left-banner {
+  position: absolute;
+  width: 36%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  z-index: -1;
+}
+
+/* Navbar Section */
+
+nav {
+  display: flex;
+  justify-content: space-between;
+  padding: 50px 60px 40px 50px;
+}
+
+nav img {
+  height: 36px;
+}
+
+.line {
+  width: 360px;
+  height: 1px;
+  background-color: #000000;
+}
+
+.list {
+  display: flex;
+  list-style: none;
+  align-items: center;
+  gap: 3rem;
+  font-size: 14px;
+}
+
+.list-items {
+  opacity: 0.5;
+}
+
+.active {
+  opacity: 0.8;
+}
+
+.drop-btn {
+  display: none;
+}
+
+/* Creative Section */
+
+.creative-section {
+  display: flex;
+  justify-content: flex-end;
+  gap: 3rem;
+  margin: 0 60px;
+}
+
+.heading-text h1 {
+  display: flex;
+  flex-direction: column;
+  font-size: 120px;
+  line-height: 1;
+}
+
+.stroke {
+  color: #333333;
+  -webkit-text-fill-color: transparent;
+  -webkit-text-stroke-width: 1px;
+  -webkit-text-stroke-color: #333333;
+}
+
+.filled {
+  color: #333333;
+  margin-left: 150px;
+}
+
+.creative-text {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  font-size: 26px;
+  opacity: 0.5;
+}
+
+.social {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  justify-content: space-between;
+  margin-left: 42px;
+}
+
+.social img {
+  height: 24px;
+}
+
+/* Button Section */
+
+.button-section {
+  display: flex;
+  justify-content: flex-end;
+  margin: 30px 60px 30px 0;
+}
+
+.package-button {
+  background-color: #333333;
+  color: #f5f2f0;
+  border: none;
+  font-size: 19px;
+  padding: 12px 38px;
+}
+
+/* Services Section */
+
+.services-section {
+  display: flex;
+  justify-content: flex-end;
+  gap: 3.5rem;
+  margin-right: 60px;
+  position: relative;
+}
+
+.service-line {
+  width: 1px;
+  height: 21rem;
+  background-color: #000000;
+  margin-right: -2.24rem;
+  margin-top: 18px;
+}
+
+.services-list {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  padding-bottom: 100px;
+  font-size: 18px;
+}
+
+.service::marker {
+  font-size: 27px;
+}
+
+.active-service::marker {
+  font-size: 27px;
+}
+
+.service {
+  opacity: 0.5;
+}
+
+.active-service {
+  opacity: 1;
+}
+
+.feature {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  width: 36%;
+  gap: 8px;
+}
+
+.feature h1 {
+  font-size: 78px;
+  font-family: serif;
+  margin-top: -54px;
+}
+
+.feature p {
+  font-size: 18px;
+}
+
+.feature img {
+  height: 270px;
+  width: 420px;
+}
+
+.services-section > img {
+  height: 122px;
+  align-self: center;
+}
+
+/* Media Queries */
+
+@media screen and (max-width: 1368px) {
+  /* Navbar */
+  .line {
+    width: 290px;
+  }
+
+  /* Creative Section */
+  .creative-section {
+    gap: 0.5rem;
+  }
+
+  /* Services Section */
+
+  .feature {
+    margin-right: 100px;
+  }
+
+  .services-list,
+  .service-line {
+    display: none;
+  }
+}
+
+@media screen and (max-width: 1232px) {
+  /* Navbar */
+
+  .list {
+    display: none;
+  }
+
+  .drop-btn {
+    display: block;
+  }
+
+  /* Creative Section */
+
+  .creative-section {
+    gap: 2rem;
+    flex-direction: column;
+    align-items: flex-end;
+  }
+
+  .social {
+    flex-direction: row;
+  }
+}
+
+@media screen and (max-width: 900px) {
+  /* Left Banner Section */
+
+  .left-banner {
+    display: none;
+  }
+
+  /* Creative Section */
+
+  .creative-section {
+    align-items: center;
+  }
+
+  .social {
+    margin: auto;
+    width: 50%;
+  }
+
+  /* Button Section */
+
+  .button-section {
+    justify-content: center;
+    margin: 30px auto;
+  }
+
+  /* Services Section */
+
+  .services-section {
+    justify-content: center;
+    margin-right: 0;
+    margin: 20px;
+  }
+
+  .services-section > img {
+    display: none;
+  }
+
+  .feature {
+    align-items: center;
+    width: 100%;
+    margin-right: 0;
+  }
+
+  .feature h1 {
+    margin-top: 0;
+  }
+
+  .feature p {
+    text-align: center;
+  }
+
+  .feature img {
+    width: auto;
+  }
+}
+
+@media screen and (max-width: 530px) {
+  /* Creative Section */
+
+  .filled {
+    margin-left: 20px;
+  }
+}
